@@ -278,17 +278,18 @@ h1, h2 {
   margin-right: auto;
   animation: fadeInUp 0.8s ease-out;
 }
-
-/* اندازه مناسب لوگو در دسکتاپ */
-.logo img {
-  height: 64px;
+.hero-logo {
   display: block;
+  margin: 0 auto 1.5rem auto;
+  animation: fadeInUp 0.8s ease-out;
+  height: 72px;
 }
 
-/* موبایل: کمی بزرگ‌تر */
 @media (max-width: 768px) {
-  .logo img {
-    height: 80px;
+  .hero-logo {
+    height: 96px;
   }
 }
+
+
 
