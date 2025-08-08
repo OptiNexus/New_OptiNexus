@@ -279,3 +279,15 @@ h1, h2 {
   animation: fadeInUp 0.8s ease-out;
 }
 
+.logo img {
+  height: 32px;
+  display: block;
+}
+
+/* موبایل: بزرگ‌تر کن تا دیده بشه */
+@media (max-width: 768px) {
+  .logo img {
+    height: 48px;
+  }
+}
+
