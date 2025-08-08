@@ -1,8 +1,5 @@
 /* پایه کلی صفحه */
 body {
-  font-family: 'Rubik', sans-serif;
-}
-body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9fafb;
@@ -13,9 +10,8 @@ body {
 /* رنگ‌های برند */
 :root {
   --orange: #f97316;
-  --blue: #3b82f6; /* آبی ملایم‌تر */
+  --blue: #3b82f6;
 }
-
 
 /* هدر سایت */
 header {
@@ -29,8 +25,18 @@ header {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 48px;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 64px;
+  }
 }
 
 nav ul {
@@ -52,7 +58,6 @@ nav a,
   font-weight: 500;
 }
 
-
 section {
   padding: 3rem 2rem;
   max-width: 900px;
@@ -61,6 +66,7 @@ section {
 
 h1, h2 {
   color: var(--blue);
+  animation: fadeInUp 0.8s ease-out;
 }
 
 /* فرم تماس */
@@ -96,7 +102,7 @@ footer {
   color: #555;
 }
 
-/* موبایل: صفحه‌های کوچکتر از 768px */
+/* موبایل */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -123,6 +129,7 @@ footer {
   }
 }
 
+/* همبرگر */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -131,21 +138,6 @@ footer {
   color: white;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .cta-buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem; /* فاصله بین دکمه‌ها */
-  }
-
-  .cta-buttons .btn {
-    width: 80%;
-    max-width: 300px;
-  }
-}
-
-
 
 @media (max-width: 768px) {
   .hamburger {
@@ -163,6 +155,18 @@ footer {
   nav ul.show {
     display: flex;
   }
+
+  .cta-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .cta-buttons .btn {
+    width: 80%;
+    max-width: 300px;
+  }
 }
 
 @keyframes fadeInUp {
@@ -176,10 +180,7 @@ footer {
   }
 }
 
-h1, h2 {
-  animation: fadeInUp 0.8s ease-out;
-}
-
+/* گالری */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -212,6 +213,7 @@ h1, h2 {
   transform: translateY(-5px);
 }
 
+/* بخش اول صفحه اصلی */
 .landing {
   padding: 5rem 2rem;
   text-align: center;
@@ -253,6 +255,7 @@ h1, h2 {
   opacity: 0.9;
 }
 
+/* انتخابگر زبان */
 .lang-select {
   background-color: var(--blue);
   color: white;
@@ -269,26 +272,6 @@ h1, h2 {
 
 .lang-select option {
   color: black;
-}
-.hero-logo {
-  height: 64px;
-  margin-bottom: 1rem;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  animation: fadeInUp 0.8s ease-out;
-}
-.hero-logo {
-  display: block;
-  margin: 0 auto 1.5rem auto;
-  animation: fadeInUp 0.8s ease-out;
-  height: 180px;
-}
-
-@media (max-width: 768px) {
-  .hero-logo {
-    height: 180px;
-  }
 }
 
 
