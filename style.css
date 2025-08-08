@@ -30,12 +30,16 @@ header {
 }
 
 .logo img {
-  height: 48px;
+  height: 56px;
+  max-height: 56px;
+  width: auto;
+  object-fit: contain;
+  image-rendering: auto;
 }
-
 @media (max-width: 768px) {
   .logo img {
-    height: 64px;
+    height: 72px;
+    max-height: 72px;
   }
 }
 
