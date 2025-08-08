@@ -301,6 +301,16 @@ footer {
   }
 }
 
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 0.6rem !important; /* حدود 5 برابر کوچکتر */
+  }
+
+  .hero p {
+    font-size: 0.75rem !important; /* حدود 40٪ کوچکتر از حالت فعلی */
+  }
+}
+
 
 
 
