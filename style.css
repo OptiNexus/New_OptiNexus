@@ -282,12 +282,12 @@ h1, h2 {
   display: block;
   margin: 0 auto 1.5rem auto;
   animation: fadeInUp 0.8s ease-out;
-  height: 120px;
+  height: 180px;
 }
 
 @media (max-width: 768px) {
   .hero-logo {
-    height: 140px;
+    height: 180px;
   }
 }
 
