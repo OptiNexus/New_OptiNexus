@@ -30,7 +30,7 @@ header {
 }
 
 .logo img {
-  height: 73px; /* قبلاً 56px بود */
+  height: 110px; /* قبلاً 76px بود */
   max-height: 73px;
   width: auto;
   object-fit: contain;
@@ -39,7 +39,7 @@ header {
 
 @media (max-width: 768px) {
   .logo img {
-    height: 94px; /* قبلاً 72px بود */
+    height: 100px; /* قبلاً 72px بود */
     max-height: 94px;
   }
 }
