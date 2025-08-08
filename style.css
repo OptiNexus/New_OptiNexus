@@ -280,14 +280,14 @@ h1, h2 {
 }
 
 .logo img {
-  height: 32px;
+  height: 64px;
   display: block;
 }
 
 /* موبایل: بزرگ‌تر کن تا دیده بشه */
 @media (max-width: 768px) {
   .logo img {
-    height: 48px;
+    height: 96px;
   }
 }
 
