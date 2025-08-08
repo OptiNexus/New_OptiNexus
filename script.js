@@ -15,10 +15,11 @@ langSwitcher.addEventListener("change", (e) => {
   loadLanguage(e.target.value);
 });
 
-// Load default language on startup
 window.addEventListener("DOMContentLoaded", () => {
-  loadLanguage(langSwitcher.value);
+  langSwitcher.value = "de"; // تغییر مقدار اولیه dropdown
+  loadLanguage("de");        // لود زبان آلمانی
 });
+
 
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.querySelector("nav ul");
