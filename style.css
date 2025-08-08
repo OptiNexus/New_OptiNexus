@@ -303,7 +303,7 @@ footer {
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 3rem !important; /* حدود 5 برابر کوچکتر */
+    font-size: o.4rem !important; /* حدود 5 برابر کوچکتر */
   }
 
   .hero p {
