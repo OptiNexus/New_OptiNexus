@@ -279,15 +279,16 @@ h1, h2 {
   animation: fadeInUp 0.8s ease-out;
 }
 
+/* اندازه مناسب لوگو در دسکتاپ */
 .logo img {
   height: 64px;
   display: block;
 }
 
-/* موبایل: بزرگ‌تر کن تا دیده بشه */
+/* موبایل: کمی بزرگ‌تر */
 @media (max-width: 768px) {
   .logo img {
-    height: 96px;
+    height: 80px;
   }
 }
 
