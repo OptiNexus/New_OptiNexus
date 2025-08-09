@@ -1,8 +1,85 @@
-<form>
-  <input type="text" placeholder="Name" />
-  <input type="email" placeholder="Email" />
-  <textarea placeholder="Nachricht"></textarea>
-  <button type="submit" data-i18n="kontakt_button">Nachricht senden</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | OptiNexus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+  <a href="index.html">
+    <img src="img/logo.png" alt="OptiNexus Logo" />
+  </a>
+</div>
+    <nav>
+      <ul>
+  <li><a href="unternehmen.html"       data-i18n="nav_unternehmen">Unternehmen</a></li>
+  <li><a href="leistungen.html"        data-i18n="nav_leistungen">Leistungen</a></li>
+  <li><a href="cad-konstruktion.html"  data-i18n="nav_cad_konstruktion">CAD Konstruktion</a></li>
+  <li><a href="simulation.html"        data-i18n="nav_simulation">Simulation</a></li>
+  <li><a href="karriere.html"          data-i18n="nav_karriere">Karriere</a></li>
+  <li><a href="news.html"              data-i18n="nav_news">News</a></li>
+  <li><a href="referenzen.html"        data-i18n="nav_referenzen">Referenzen</a></li>
+  <li><a href="kontakt.html"           data-i18n="nav_kontakt">Kontakt</a></li>
+
+  <li>
+    <select id="langSwitcher" class="lang-select">
+      <option value="de">DE</option>
+      <option value="en">EN</option>
+    </select>
+  </li>
+</ul>
+    </nav>
+  </header>
+
+  <main>
+  <section class="contact-card">
+    <h1 data-i18n="kontakt_title">Kontakt aufnehmen</h1>
+
+    <form class="contact-form">
+      <div class="contact-grid">
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Ihr Name" required />
+        </div>
+
+        <div class="form-field">
+          <label for="email">E-Mail</label>
+          <input id="email" type="email" placeholder="beispiel@mail.de" required />
+        </div>
+
+        <div class="form-field">
+          <label for="company">Firma (optional)</label>
+          <input id="company" type="text" placeholder="Firmenname" />
+        </div>
+
+        <div class="form-field">
+          <label for="subject">Betreff</label>
+          <input id="subject" type="text" placeholder="Kurzer Betreff" />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="message">Nachricht</label>
+        <textarea id="message" rows="6" placeholder="Ihre Nachricht..."></textarea>
+      </div>
+
+      <div class="form-foot">
+        <button type="submit" data-i18n="kontakt_button">Nachricht senden</button>
+      </div>
+    </form>
+  </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SimuCraft</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
 
