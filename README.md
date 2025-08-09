@@ -1,7 +1,7 @@
-# simucraft-site
-# 🌐 SimuCraft Website
+# OptiNexus-site
+# 🌐 OptiNexus Website
 
-Welcome to the official source code of **SimuCraft**, a multilingual, responsive landing page for a creative engineering studio specializing in CAD, simulation, and mechanical design.
+Welcome to the official source code of **OptiNexus**, a multilingual, responsive landing page for a creative engineering studio specializing in CAD, simulation, and mechanical design.
 
 ![Preview](preview.png)
 
@@ -54,7 +54,7 @@ The site can be hosted using **GitHub Pages**.
 
 ## 📬 Contact
 
-Feel free to reach out via: `info@simucraft.com`  
+Feel free to reach out via: `info@optinexus.de`  
 Or visit the [Contact page](contact.html) to send a message.
 
 ---
